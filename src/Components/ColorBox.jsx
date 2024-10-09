@@ -1,8 +1,8 @@
 import { useState } from "react";
 import colors from "../data/data";
 
-export default function ColorBox({ initialColor }) {
-  const [color, set] = useState(initialColor);
+export default function ColorBox({ initial }) {
+  const [color, set] = useState(initial);
 
   const change = () => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];

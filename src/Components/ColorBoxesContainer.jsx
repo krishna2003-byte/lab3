@@ -5,7 +5,7 @@ export default function ColorBoxesContainer() {
   const boxes = [];
   for (let i = 0; i < 25; i++) {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    boxes.push(<ColorBox key={i} initialColor={randomColor} />);
+    boxes.push(<ColorBox key={i} initial={randomColor} />);
   }
   return (
     <div
